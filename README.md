@@ -6,6 +6,7 @@ Automatically manages the CLS namespace for ssacl/sequelize allowing you to simp
 ```js
 koa.use(function *(next) {
   this.actor = this.request.user.id;
+  yield next;
 });
 
 koa.use(require('koa-ssacl')());
