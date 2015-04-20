@@ -1,4 +1,5 @@
 # koa-ssacl
+
 Easily set the ssacl actor from koa
 
 Automatically manages the CLS namespace for ssacl/sequelize allowing you to simply do:
