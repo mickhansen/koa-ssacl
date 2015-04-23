@@ -13,10 +13,4 @@ koa.use(function *(next) {
 koa.use(require('koa-ssacl')());
 ```
 
-Note if already using sequelize with CLS you need to pass the namespace to koa-ssacl so it won't generate it's own:
-
-```js
-koa.use(require('koa-ssacl')({
-  cls: namespace
-}));
-````
+Note if already using sequelize with CLS koa-ssacl will automatically use that namespace instead of generating it's own.
